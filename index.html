@@ -1,0 +1,87 @@
+<style>
+label{
+    width: 150px;
+    display:inline-block ;
+    margin:5px 0;
+}
+fieldset{
+    margin:15px 0;
+}
+.sektor_grup{
+    margin:10px 0;
+}
+#program_diller{
+    width: 25%;
+}
+.ortala{
+    margin:0 auto;
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sözleşme</title>
+</head>
+<body>
+    <h1>Sözleşme Örneği</h1>
+    <fieldset>
+        <legend>Sözleşme Onay</legend>
+        <label for="guvenlik">Güvenlik Id</label>
+        <input type="text" id="guvenlik" value="2342" disabled><br/>
+        <label for="ad">Ad</label>
+        <input type="text" id="ad" name="ad"><br/>
+        <label for="sad">Soyad</label>
+        <input type="text" id="sad" name="sad"><br/>
+        <label for="yas">Yaş</label>
+        <input type="number" id="yas" name="yas"><br/>
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="mail"><br/>
+    </fieldset>
+    <fieldset>
+        <legend>Diğer Bilgiler</legend>
+        <h3>Buradaki Bilgiler Mesleki Deneyimi Kapsar</h3>
+        <label for="sektor_tarih">Sektöre Giriş Tarihi</label>
+        <input type="date" id="sektor_tarih" name="sektor_tarih"><br/>
+        <div class="sektor_grup">
+            <label for="deneyim_1">Sektör Deneyimi</label>
+            <input type="radio" id="deneyim_1" name="sektor_deneyim" value="1-5">
+            <label for="deneyim_bos">1-5</label><br/>
+            <label for=""></label>
+            <input type="radio" id="deneyim_2" name="sektor_deneyim" value="6-10">
+            <label for="deneyim_2">6-10</label><br/>
+            <label for=""></label>
+            <input type="radio" id="deneyim_3" name="sektor_deneyim" value="11-15">
+            <label for="deneyim_3">11-15</label><br/>
+            <label for=""></label>
+            <input type="radio" id="deneyim_4" name="sektor_deneyim" value=">15">
+            <label for="deneyim_4">16 - üzeri</label><br/>
+        </div>
+        <label for="program_diller">Programlama Dilleri</label>
+        <select length="100px" name="program_diller" id="program_diller" size="6">
+            <option value="csharp">C#</option>
+            <option value="php">PHP</option>
+            <option value="java">Java</option>
+            <option value="js">JavaScript</option>
+            <option value="phyton">Phayton</option>
+            <option value="ruby">Ruby</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Sözleşme Kopyası</legend>
+        <textarea name="sozlesme_kopyasi" id="sozlesme_kopyasi" cols="30" rows="8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sapiente provident nisi, consectetur accusamus et ipsum ullam aut a necessitatibus cumque ipsam quam aliquid temporibus cum, tempore ab expedita aspernatur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolorum animi consectetur sit quasi, ipsa temporibus eius aliquid quos. Quibusdam, laudantium commodi numquam eum officiis quos debitis consequatur cumque atque.</textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Email Listesi</legend>
+        <label for="email_yes">Katılmak İstiyorum</label>
+        <input type="radio" name="email_onay" id="email_yes"><br/>
+        <label for="email_no">Katılmak İstemiyorum</label>
+        <input type="radio" name="email_onay" id="email_no">
+       
+    </fieldset>
+    <div class="ortala">&copy; Hiçbir Hakkı Yoktur :)</div>
+</body>
+</html>
